@@ -1,6 +1,8 @@
 const express = require('express');
 const hbs = require('hbs');
+
 const app = express();
+
 app.set('view engine', 'hbs');
 
 hbs.registerPartials(_dirname + '/views/partials/');
@@ -13,11 +15,11 @@ app.get('/', (req, res)=>{
 app.get('/dali', (req, res)=>{
     res.render('dali');
 });
-app.get('/picasso', (req, res)=>{
-    res.render('picass');
+app.get('/picass', (req, res)=>{
+    res.render('picasso');
 });
-app.get('/velazques', (req, res)=>{
-    res.render('velaz');
+app.get('/velaz', (req, res)=>{
+    res.render('velazques');
 });
 app.get('/monet', (req, res)=>{
     res.render('monet');
